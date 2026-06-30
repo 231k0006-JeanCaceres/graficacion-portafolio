@@ -3,6 +3,11 @@
 ¡Bienvenido/a al repositorio base para tu portafolio de la materia de **Graficación**! Este espacio será tu "lienzo digital" durante todo el semestre. Aquí integrarás y mostrarás cada uno de los proyectos y prácticas que desarrolles, transitando desde los gráficos interactivos en 2D hasta entornos virtuales en 3D.
 
 ---
+Este repositorio tiene un doble propósito:
+1. **Tu Portafolio Web:** La página que se verá publicamente en internet para ejecutar tus proyectos.
+2. **Tu ejercicios en código:** Las carpetas donde guardarás los archivos de código fuente de cada práctica para su revisión.
+
+---
 
 ## ¿Cómo crear tu propio portafolio con esta plantilla?
 
@@ -46,9 +51,35 @@ A lo largo del curso usaras herramientas como el editor web de **p5.js** (para 2
 
 ---
 
+## ¿Cómo organizar tus códigos y actualizar el portafolio?
+
+Conforme avancemos en el semestre, crearemos carpetas específicas para guardar el código fuente de cada actividad de manera ordenada. Tu repositorio terminará viéndose así:
+
+```text
+graficacion-portafolio/
+│
+├── index.html           ◄— Tu portafolio (la página web principal)
+├── css/style.css       ◄— El diseño visual de tu portafolio
+│
+├── Unidad_1/            ◄— Carpeta para los códigos de la Unidad 1
+│   ├── AA_1.1_Primitivas/
+│   │   └── sketch.js    ◄— Aquí pegarás el código 
+│   └── AA_1.2_Colores/
+│   │   └── sketch.js    ◄— Aquí pegarás el código 
+│   └── AA_1.3_Animación/
+│   │   └── sketch.js    ◄— Aquí pegarás el código 
+│   └── AA_1.4_Reto/
+│       └── sketch.js    ◄— Aquí pegarás el código 
+└── Unidad_2/            ◄— Carpeta para los códigos de la Unidad 2
+    └── AA_2.1_Traslación/
+        └── sketch.js
+---
+
 ## Tecnologías que utilizaremos
 * **HTML5 y CSS3:** Para la estructura de este portafolio.
 * **p5.js (JavaScript):** Para aprender coordenadas, colores, pinceles interactivas y transformaciones 2D.
 * **Three.js (JavaScript + WebGL):** Para dar el salto a mundos 3D, cámaras, luces y texturas.
 
-Si tienes dudas durante el proceso de configuración, levanta la mano en el laboratorio para que la profesora o tus compañeros te apoyemos. ¡Mucho éxito en este semestre!
+Si tienes dudas durante el proceso de configuración, levanta la mano en el laboratorio para que la profesora o tus compañeros te apoyemos. 
+
+¡Mucho éxito en este semestre!
