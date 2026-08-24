@@ -1,6 +1,8 @@
 # Portafolio de Practicas - Materia: Graficación
 
-¡Bienvenido/a al repositorio base para tu portafolio de la materia de **Graficación**! Este espacio será tu "lienzo digital" durante todo el semestre. Aquí integrarás y mostrarás cada uno de los proyectos y prácticas que desarrolles, transitando desde los gráficos interactivos en 2D hasta entornos virtuales en 3D.
+¡Bienvenido/a al repositorio base para tu portafolio de la materia de **Graficación**! 
+
+Este espacio será tu "lienzo digital" durante todo el semestre. Aquí integrarás y mostrarás cada uno de los proyectos y prácticas que desarrolles, transitando desde los gráficos interactivos en 2D hasta entornos virtuales en 3D.
 
 ---
 Este repositorio tiene un doble propósito:
@@ -74,6 +76,7 @@ graficacion-portafolio/
     └── AA_2.1_Traslación/
         └── sketch.js
 ---
+```
 
 ## Tecnologías que utilizaremos
 * **HTML5 y CSS3:** Para la estructura de este portafolio.
