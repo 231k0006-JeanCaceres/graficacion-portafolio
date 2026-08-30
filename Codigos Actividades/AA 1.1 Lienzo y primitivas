@@ -1,1 +1,59 @@
 
+function setup() {
+  createCanvas(400, 400);
+ 
+}
+
+function draw() {
+  // Fondo
+  background(30, 30, 40);
+
+  // ---- CUERPO (rect) ----
+  stroke(20, 20, 20);
+  strokeWeight(3);
+  fill(90, 150, 220);
+  rect(130, 160, 140, 120, 8);
+
+  // ---- CABEZA (rect) ----
+  stroke(20, 20, 20);
+  strokeWeight(3);
+  fill(200, 210, 220);
+  rect(150, 80, 100, 80, 10);
+  // ---- OJOS (circle) ----
+  stroke(0, 0, 0);
+  strokeWeight(2);
+  fill(60, 220, 200);
+  circle(180, 115, 20);
+  circle(220, 115, 20);
+
+  // ---- BOTÓN DEL PECHO (circle) ----
+  stroke(255, 255, 255);
+  strokeWeight(2);
+  fill(230, 90, 90);
+  circle(200, 210, 26);
+
+  // ---- PIERNAS (rect) ----
+  stroke(20, 20, 20);
+  strokeWeight(3);
+  fill(120, 120, 130);
+  rect(150, 280, 30, 60, 4);
+  rect(220, 280, 30, 60, 4);
+
+  // ---- BRAZOS (line) ----
+  stroke(90, 150, 220);
+  strokeWeight(10);
+  line(130, 190, 90, 240);
+  line(270, 190, 310, 240);
+
+  // ---- ANTENA (line) ----
+  stroke(200, 210, 220);
+  strokeWeight(4);
+  line(200, 80, 200, 55);
+  line(190, 55, 210, 55);
+
+  // ---- PUNTA DE LA ANTENA (triangle) ----
+  noStroke();
+  fill(255, 210, 60);
+  triangle(190, 55, 210, 55, 200, 35);
+
+}
