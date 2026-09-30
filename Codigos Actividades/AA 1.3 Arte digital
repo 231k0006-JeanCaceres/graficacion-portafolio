@@ -1,0 +1,49 @@
+function setup() {
+  createCanvas(600, 400);
+  background(15, 30, 80);
+  noLoop();
+}
+
+function draw() {
+  // Cielo con trazos en remolino
+  for (let i = 0; i < 3000; i++) {
+    let x = random(width);
+    let y = random(height * 0.7);
+    let a = noise(x * 0.005, y * 0.005) * TWO_PI * 2;
+    stroke(40, random(80, 150), random(150, 220));
+    strokeWeight(3);
+    line(x, y, x + cos(a) * 15, y + sin(a) * 15);
+  }
+
+  // Luna y estrellas con trazos amarillos
+  halo(500, 80, 50); //posicion //altura //tamaño
+   halo(300, 60, 25);
+  halo(150, 90, 30);
+ 
+
+  // Colinas oscuras
+  noStroke();
+  fill(15, 50, 70);
+  ellipse(300, 420, 800, 200);
+
+  // Ciprés con trazos verticales
+  for (let i = 0; i < 800; i++) {
+    let y = random(100, height);
+    let x = 100 + random(-1, 1) * map(y, 100, height, 5, 40);
+    stroke(10, random(40, 80), 30);
+    strokeWeight(3);
+    line(x, y, x, y - random(10, 25));
+  }
+}
+
+function halo(x, y, r) {
+  for (let i = 0; i < 150; i++) {
+    let ang = random(TWO_PI);
+    let d = random(r);
+    let px = x + cos(ang) * d;
+    let py = y + sin(ang) * d;
+    stroke(255, random(200, 240), 80);
+    strokeWeight(2);
+    line(px, py, px + cos(ang + HALF_PI) * 6, py + sin(ang + HALF_PI) * 6);
+  }
+}
